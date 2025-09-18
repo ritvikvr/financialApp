@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Financial Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Tracker</h1>
+        <br>
+        <div id="auth-section">
+            <div id="register-form-container">
+                <h2 class="type">Register</h2>
+                <form id="register-form">
+                    <input type="text" id="register-username" name="registerUsername" placeholder="Username" required>
+                    <input type="password" id="register-password" name="registerPassword" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        <br>
+
+
+            <div id="login-form-container">
+                <h2 class="type">Login</h2>
+                <form id="login-form">
+                    <input type="text" id="login-username" name="loginUsername" placeholder="Username" required>
+                    <input type="password" id="login-password" name="loginPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="app-section" style="display: none;">
+            <button id="logout-button">Logout</button>
+            <h2>Add New Transaction</h2>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <select id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <input type="date" id="date" required>
+                <button type="submit" id="add-transaction-btn">Add Transaction</button>
+            </form>
+
+            <h2>Your Transactions</h2>
+            <ul id="transaction-list">
+                <!-- Transactions will be loaded here -->
+            </ul>
+
+            <div id="total-income">Total Income: $0</div>
+            <div id="total-expense">Total Expense: $0</div>
+            <div id="balance">Balance: $0</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
