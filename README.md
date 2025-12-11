@@ -401,7 +401,7 @@ copies or substantial portions of the Software.
 
 ## 👤 Author
 
-**Ritvik Verma** (@ritvikvr)
+**Ritvik** (@ritvikvr)
 - Computer Science Engineering Student specializing in AI & Data Science
 - Full-Stack Developer with expertise in MERN stack
 - GitHub: [ritvikvr](https://github.com/ritvikvr)
